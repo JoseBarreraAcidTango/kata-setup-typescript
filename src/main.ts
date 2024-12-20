@@ -1,11 +1,9 @@
-type Light = { postion: number; isActive: number }
-
 export class Garden {
-  lights!: boolean[][]
-  lightsUp!: number
+  lights: boolean[][]
+  lightsUp: number
 
   constructor(numberOfRows: number, numberOfColumns: number) {
-    this.lights = Array(numberOfRows).fill(Array(numberOfColumns).fill(0))
+    this.lights = Array.from({ length: numberOfRows }, () => Array(numberOfColumns).fill(false))
     this.lightsUp = 0
   }
 

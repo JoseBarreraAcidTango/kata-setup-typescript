@@ -23,7 +23,7 @@ describe("Default test", () => {
 
       console.log(garden.lightsUpCount())
       console.log(garden.lightsUp)
-      expect(garden.lightsUpCount()).toBe(231000)
+      expect(garden.lightsUpCount()).toBe(230022)
     })
   })
 })
